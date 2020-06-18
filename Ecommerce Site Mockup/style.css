@@ -1,0 +1,110 @@
+/*
+Gage Gutmann
+11/18/19
+Assignment 4
+*/
+
+html{
+    background-color:lightcyan;
+    font-family: 'Rokkitt', serif;
+}
+
+body{
+  background-color:lightcyan;
+  font-family: 'Rokkitt', serif;
+}
+
+a.navbar-brand{
+  font-family: 'Acme', sans-serif;
+}
+
+h5{
+  font-family: 'Oxygen', sans-serif;
+}
+
+h3{
+  font-family: 'Cinzel', serif;
+}
+
+h4{
+  font-family: 'Acme', sans-serif;
+}
+
+div.container-fluid{
+    border-color:#C2EAF5;
+    border-style: solid;
+    background: linear-gradient(#FFFAEC, #F1F8FE);
+}
+
+div.container{
+    border-color:#C2EAF5;
+    border-style: solid;
+    background: linear-gradient(#FFFAEC, #F1F8FE);
+}
+div.card-deck{
+    border-color:#C2EAF5;
+    border-style: solid;
+    background: linear-gradient(#FFFAEC, #F1F8FE);
+}
+
+div.gallery {
+    display: inline-flex;
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:link{
+  color: black;
+  text-decoration: none;
+}
+
+a:hover{
+  color:yellowgreen;
+}
+
+
+/*Had a hard time resizing the cards with values between mobile view and full view*/
+
+/*
+.card-columns {
+  @include media-breakpoint-only(md) {
+    column-count: 3;
+  }
+  @include media-breakpoint-only(lg) {
+    column-count: 4;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 5;
+  }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+    column-count: 1;
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { ... }
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { ... }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) { ... }
+*/

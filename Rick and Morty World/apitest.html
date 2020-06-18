@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+      <script>
+          function getCharacters(array){
+            let endpoint = "https://rickandmortyapi.com/api/";
+            let characterString = "character/" + array;
+            let url = endpoint + characterString;
+
+            let request = new XMLHttpRequest();
+            request.open('GET', url,true);
+
+            request.onload = function(){
+            let data = JSON.parse(this.response);
+
+            for(i = 0; i< data.length; i++){
+            console.log("ID: " + data[i].id +
+            "\nName: " + data[i].name +
+            "\nStatus: " + data[i].status +
+            "\nSpecies " + data[i].species);
+            }
+        }
+
+            request.send();
+
+            fetch(url).then(function(result) {
+            return result.json();
+            }).then(function(json) {
+            console.log(json);
+            });
+    }
+
+    function getCharacterByFilter(string){
+    let endpoint = "https://rickandmortyapi.com/api/";
+    let characterString = "character/?name=" + string;
+    let url = endpoint + characterString;
+
+    let request = new XMLHttpRequest();
+    request.open('GET', url,true);
+
+    request.onload = function(){
+    let data = JSON.parse(this.response);
+
+    for(i = 0; i< data.results.length; i++){
+    console.log("ID: " + data.results[i].id +
+    "\nName: " + data.results[i].name +
+    "\nStatus: " + data.results[i].status +
+    "\nSpecies " + data.results[i].species);
+    }
+}
+
+    request.send();
+
+    fetch(url).then(function(result) {
+    return result.json();
+    }).then(function(json) {
+    console.log(json);
+    });
+}
+
+
+    function randomCards(){
+        let endpoint = "https://rickandmortyapi.com/api/";
+            let characterString = "character/";
+
+            for(i = 0; i < 5; i++){
+                let x = Math.floor((Math.random() * 493)+1);
+                characterString = characterString + x +",";
+            }
+
+            let y = Math.floor((Math.random() * 493)+1);
+            characterString = characterString + y;
+            let url = endpoint + characterString;
+            console.log(url);
+    }
+      </script>
+  </body>
+</html>

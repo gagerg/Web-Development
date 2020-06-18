@@ -1,0 +1,35 @@
+/**
+ * Gage Gutmann and Cole deSilva
+ * CPSC 314 Final Project
+ */
+html {
+  width: 100%;
+}
+
+#header {
+  padding-left: 0px;
+  padding-right: 0px;
+  /* image from: https://rickandmortypod.com/ */
+  text-align: center;
+  color: white;
+}
+#header h1 {
+  font-size: 100px;
+}
+
+.jumbotron.jumbotron-fluid {
+  margin-bottom: 0px;
+}
+
+nav {
+  margin-bottom: 30px;
+}
+
+.card-deck {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.row {
+  margin-bottom: 30px;
+}

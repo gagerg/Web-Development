@@ -1,0 +1,303 @@
+<!-- 
+  Gage Gutmann and Cole deSilva
+  CPSC 314 Project
+ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" type="text/css" href="homepage.css" />
+
+    <!-- Importing D3 -->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <script src="rickandmortyapi.js"></script>
+
+    <title>Ah Jheez Rick</title>
+  </head>
+  <body onload="getCharacterByFilter();clickSubmit();">
+    <div id="header" class="container-fluid">
+      <div
+        class="jumbotron jumbotron-fluid"
+        style="background-image: url('images/header.png'); background-size: cover;"
+      >
+        <h1>Rick and Morty World</h1>
+        <p>
+          Welcome to the lovely (and slightly frightening) world of Rick and
+          Morty!
+        </p>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarTogglerDemo03"
+        aria-controls="navbarTogglerDemo03"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="homepage.html">Home</a>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="graphpage.html"
+              >Graphical Data<span class="sr-only">(current)</span></a
+            >
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            id="searchapi"
+            class="form-control mr-sm-2"
+            type="text"
+            value=""
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <input id="submitsearch"class="btn btn-outline-success my-2 my-sm-0" value="Search"  />
+            Search
+        </form>
+      </div>
+    </nav>
+      
+    </div>
+    <div id="searchcard1" class="card mb-3">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img id="searchcardimg1" src="..." class="card-img-top" alt="..." />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 id="searchcardtitle1" class="card-title">Card 1</h5>
+              <p id="searchcardtext1" class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li id="item1searchcard1"class="list-group-item">Cras justo odio</li>
+                <li id="item2searchcard1"class="list-group-item">Dapibus ac facilisis in</li>
+                <li id="item3searchcard1"class="list-group-item">Vestibulum at eros</li>
+                <li id="item4searchcard1"class="list-group-item">Vestibulum at eros</li>
+                <li id="item5searchcard1"class="list-group-item">Vestibulum at eros</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="searchcard2" class="card mb-3">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img id="searchcardimg2" src="..." class="card-img-top" alt="..." />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 id="searchcardtitle2" class="card-title">Card 2</h5>
+              <p id="searchcardtext2" class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li id="item1searchcard2"class="list-group-item">Cras justo odio</li>
+                <li id="item2searchcard2"class="list-group-item">Dapibus ac facilisis in</li>
+                <li id="item3searchcard2"class="list-group-item">Vestibulum at eros</li>
+                <li id="item4searchcard2"class="list-group-item">Vestibulum at eros</li>
+                <li id="item5searchcard2"class="list-group-item">Vestibulum at eros</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="searchcard3" class="card mb-3">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img id="searchcardimg3" src="..." class="card-img-top" alt="..." />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 id="searchcardtitle3" class="card-title">Card 3</h5>
+              <p id="searchcardtext3" class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li id="item1searchcard3"class="list-group-item">Cras justo odio</li>
+                <li id="item2searchcard3"class="list-group-item">Dapibus ac facilisis in</li>
+                <li id="item3searchcard3"class="list-group-item">Vestibulum at eros</li>
+                <li id="item4searchcard3"class="list-group-item">Vestibulum at eros</li>
+                <li id="item5searchcard3"class="list-group-item">Vestibulum at eros</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="searchcard4" class="card mb-3">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img id="searchcardimg4" src="..." class="card-img-top" alt="..." />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 id="searchcardtitle4" class="card-title">Card 4</h5>
+              <p id="searchcardtext4" class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li id="item1searchcard4"class="list-group-item">Cras justo odio</li>
+                <li id="item2searchcard4"class="list-group-item">Dapibus ac facilisis in</li>
+                <li id="item3searchcard4"class="list-group-item">Vestibulum at eros</li>
+                <li id="item4searchcard4"class="list-group-item">Vestibulum at eros</li>
+                <li id="item5searchcard4"class="list-group-item">Vestibulum at eros</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="searchcard5" class="card mb-3">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img id="searchcardimg5" src="..." class="card-img-top" alt="..." />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 id="searchcardtitle5" class="card-title">Card 5</h5>
+              <p id="searchcardtext5" class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li id="item1searchcard5"class="list-group-item">Cras justo odio</li>
+                <li id="item2searchcard5"class="list-group-item">Dapibus ac facilisis in</li>
+                <li id="item3searchcard5"class="list-group-item">Vestibulum at eros</li>
+                <li id="item4searchcard5"class="list-group-item">Vestibulum at eros</li>
+                <li id="item5searchcard5"class="list-group-item">Vestibulum at eros</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="searchcard6" class="card mb-3">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img id="searchcardimg6" src="..." class="card-img-top" alt="..." />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 id="searchcardtitle6" class="card-title">Card 6</h5>
+              <p id="searchcardtext6" class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li id="item1searchcard6"class="list-group-item">Cras justo odio</li>
+                <li id="item2searchcard6"class="list-group-item">Dapibus ac facilisis in</li>
+                <li id="item3searchcard6"class="list-group-item">Vestibulum at eros</li>
+                <li id="item4searchcard6"class="list-group-item">Vestibulum at eros</li>
+                <li id="item5searchcard6"class="list-group-item">Vestibulum at eros</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="searchcard7" class="card mb-3">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img id="searchcardimg7" src="..." class="card-img-top" alt="..." />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 id="searchcardtitle7" class="card-title">Card 7</h5>
+              <p id="searchcardtext7" class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li id="item1searchcard7"class="list-group-item">Cras justo odio</li>
+                <li id="item2searchcard7"class="list-group-item">Dapibus ac facilisis in</li>
+                <li id="item3searchcard7"class="list-group-item">Vestibulum at eros</li>
+                <li id="item4searchcard7"class="list-group-item">Vestibulum at eros</li>
+                <li id="item5searchcard7"class="list-group-item">Vestibulum at eros</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="searchcard8" class="card mb-3">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img id="searchcardimg8" src="..." class="card-img-top" alt="..." />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 id="searchcardtitle8" class="card-title">Card 8</h5>
+              <p id="searchcardtext8" class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li id="item1searchcard8"class="list-group-item">Cras justo odio</li>
+                <li id="item2searchcard8"class="list-group-item">Dapibus ac facilisis in</li>
+                <li id="item3searchcard8"class="list-group-item">Vestibulum at eros</li>
+                <li id="item4searchcard8"class="list-group-item">Vestibulum at eros</li>
+                <li id="item5searchcard8"class="list-group-item">Vestibulum at eros</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="searchcard9" class="card mb-3">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img id="searchcardimg9" src="..." class="card-img-top" alt="..." />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 id="searchcardtitle9" class="card-title">Card 9</h5>
+              <p id="searchcardtext9" class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li id="item1searchcard9"class="list-group-item">Cras justo odio</li>
+                <li id="item2searchcard9"class="list-group-item">Dapibus ac facilisis in</li>
+                <li id="item3searchcard9"class="list-group-item">Vestibulum at eros</li>
+                <li id="item4searchcard9"class="list-group-item">Vestibulum at eros</li>
+                <li id="item5searchcard9"class="list-group-item">Vestibulum at eros</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="searchcard10" class="card mb-3">
+        <div class="row no-gutters">
+          <div class="col-md-4">
+            <img id="searchcardimg10" src="..." class="card-img-top" alt="..." />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 id="searchcardtitle10" class="card-title">Card 10</h5>
+              <p id="searchcardtext10" class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li id="item1searchcard10"class="list-group-item">Cras justo odio</li>
+                <li id="item2searchcard10"class="list-group-item">Dapibus ac facilisis in</li>
+                <li id="item3searchcard10"class="list-group-item">Vestibulum at eros</li>
+                <li id="item4searchcard10"class="list-group-item">Vestibulum at eros</li>
+                <li id="item5searchcard10"class="list-group-item">Vestibulum at eros</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

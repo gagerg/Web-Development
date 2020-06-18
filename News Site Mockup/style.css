@@ -1,0 +1,164 @@
+/*
+Gage Gutmann
+10/30/19
+Assignment 2
+*/
+
+html{
+    background-color:lightcyan;
+}
+
+div.logo-top{
+    grid-area: logo-top;
+    background: linear-gradient(#C2EAF5,#F4F0D4);
+
+}
+
+div.logo-top h1{
+    margin-left:10px;
+    font-family: 'Acme', sans-serif;
+}
+
+div.top-story h1{
+    font-family: 'Cinzel', serif;
+}
+
+h3{
+    font-family: 'Oxygen', sans-serif;
+}
+
+
+div.sports-div{
+    border-color: #C2EAF5;
+    border-style: solid;
+    background: linear-gradient(#FFFAEC, #F1F8FE);
+    grid-area:sports-div;
+}
+
+
+div.tech-div{
+    border-color:#C2EAF5;
+    border-style: solid;
+    background: linear-gradient(#FFFAEC, #F1F8FE);
+    grid-area:tech-div;
+
+}
+
+div.business-div{
+    border-color: #C2EAF5;
+    border-style: solid;
+    background: linear-gradient(#FFFAEC, #F1F8FE);
+    grid-area: business-div;
+}
+
+div.politics-div{
+    border-color: #C2EAF5;
+    border-style: solid;
+    background: linear-gradient(#FFFAEC, #F1F8FE);
+    grid-area: politics-div;
+}
+
+section.logo-nav{
+    margin-left:10px;
+}
+
+section.business-section{
+    display:inline-flex;
+}
+
+section.politics-section{
+    display:inline-flex;
+}
+
+div.top-story{
+    background: linear-gradient(#FFFAEC, #F1F8FE);
+    border-color: #C2EAF5;
+    border-style: solid;
+    grid-area: top-story;
+}
+
+article{
+    margin:30px;
+}
+
+h2{
+    margin-left: 15px;
+    font-family: 'Cinzel', serif;
+}
+
+p{
+    font-family: 'Rokkitt', serif;
+}
+
+ul.menu{
+    padding: 0px;
+}
+
+
+
+li.menu-item{
+    display:inline;
+    font-family: 'Cinzel', serif;
+    margin-right: 5px;
+
+}
+
+
+
+li.rel-menu-items{
+    display:block;
+    font-family: 'Cinzel', serif;
+    margin-bottom: 5px;
+
+}
+
+div.article-div{
+    background: linear-gradient(#FFFAEC, #F1F8FE);
+    border-color: #C2EAF5;
+    border-style: solid;
+}
+
+div.article-div h1{
+    font-family: 'Cinzel', serif;
+}
+
+div.relative-links{
+    background: linear-gradient(#FFFAEC, #F1F8FE);
+    border-color: #C2EAF5;
+    border-style: solid;
+}
+
+div.body-down{
+    display: grid;
+    grid-template-areas: 
+      "logo-top logo-top logo-top"
+      "sports-div top-story tech-div"
+      "sports-div business-div tech-div"
+      "sports-div politics-div tech-div";
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr, 1fr, 1fr, 1fr;
+    grid-gap:10px;
+}
+
+div.article-down{
+    display:grid;
+    grid-template-areas: 
+     "logo-top logo-top"
+     "article-div relative-links";
+     grid-template-columns: 5fr 1fr;
+     grid-gap:10px;
+}
+
+a:link{
+    color: black;
+    text-decoration: none;
+}
+
+a:visited{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    color:yellowgreen;
+}

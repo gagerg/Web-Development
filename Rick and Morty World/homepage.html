@@ -1,0 +1,205 @@
+<!-- 
+  Gage Gutmann and Cole deSilva
+  CPSC 314 Project
+ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" type="text/css" href="homepage.css" />
+
+    <!-- Importing D3 -->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <script src="rickandmortyapi.js"></script>
+
+    <title>Ah Jheez Rick</title>
+  </head>
+  <body onload="randomCards()">
+    <div id="header" class="container-fluid">
+      <div
+        class="jumbotron jumbotron-fluid"
+        style="background-image: url('images/header.png'); background-size: cover;"
+      >
+        <h1>Rick and Morty World</h1>
+        <p>
+          Welcome to the lovely (and slightly frightening) world of Rick and
+          Morty!
+        </p>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarTogglerDemo03"
+        aria-controls="navbarTogglerDemo03"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="homepage.html">Home</a>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="graphpage.html"
+              >Graphical Data<span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="searchpage.html"
+              >Search Character<span class="sr-only">(current)</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="cardrow1" class="card-deck my-4 mx-3">
+      <div id="homecard1" class="card">
+        <img id="homecardimg1" src="..." class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 id="homecardtitle1" class="card-title">Card title</h5>
+          <p id="homecardtext1" class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li id="item1homecard1"class="list-group-item">Cras justo odio</li>
+          <li id="item2homecard1"class="list-group-item">Dapibus ac facilisis in</li>
+          <li id="item3homecard1"class="list-group-item">Vestibulum at eros</li>
+          <li id="item4homecard1"class="list-group-item">Vestibulum at eros</li>
+          <li id="item5homecard1"class="list-group-item">Vestibulum at eros</li>
+        </ul>
+      </div>
+
+      <div id="homecard2" class="card">
+        <img id="homecardimg2" rc="..." class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 id="homecardtitle2" class="card-title">Card title</h5>
+          <p id="homecardtext2" class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li id="item1homecard2"class="list-group-item">Cras justo odio</li>
+            <li id="item2homecard2"class="list-group-item">Dapibus ac facilisis in</li>
+            <li id="item3homecard2"class="list-group-item">Vestibulum at eros</li>
+            <li id="item4homecard2"class="list-group-item">Vestibulum at eros</li>
+            <li id="item5homecard2"class="list-group-item">Vestibulum at eros</li>
+        </ul>
+      </div>
+
+      <div id="homecard3" class="card">
+        <img id="homecardimg3" src="..." class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 id="homecardtitle3" class="card-title">Card title</h5>
+          <p id="homecardtext3" lass="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+        </div>
+        <ul class="list-group list-group-flush">
+            <li id="item1homecard3"class="list-group-item">Cras justo odio</li>
+            <li id="item2homecard3"class="list-group-item">Dapibus ac facilisis in</li>
+            <li id="item3homecard3"class="list-group-item">Vestibulum at eros</li>
+            <li id="item4homecard3"class="list-group-item">Vestibulum at eros</li>
+            <li id="item5homecard3"class="list-group-item">Vestibulum at eros</li>
+        </ul>
+        </div>
+    </div>
+
+      <div id="cardrow2" class="card-deck my-4 mx-3">
+        <div id="homecard4" class="card">
+                <img id="homecardimg4" src="..." class="card-img-top" alt="..." />
+                <div class="card-body">
+                    <h5 id="homecardtitle4" class="card-title">Card title</h5>
+                    <p id="homecardtext4" class="card-text">
+                    Some quick example text to build on the card title and make up the
+                    bulk of the card's content.
+                    </p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li id="item1homecard4"class="list-group-item">Cras justo odio</li>
+                    <li id="item2homecard4"class="list-group-item">Dapibus ac facilisis in</li>
+                    <li id="item3homecard4"class="list-group-item">Vestibulum at eros</li>
+                    <li id="item4homecard4"class="list-group-item">Vestibulum at eros</li>
+                    <li id="item5homecard4"class="list-group-item">Vestibulum at eros</li>
+                </ul>
+                </div>
+        <div id="homecard5" class="card">
+            <img id="homecardimg5" src="..." class="card-img-top" alt="..." />
+            <div class="card-body">
+            <h5 id="homecardtitle5" class="card-title">Card title</h5>
+            <p id="homecardtext5" class="card-text">
+                Some quick example text to build on the card title and make up the
+                bulk of the card's content.
+            </p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li id="item1homecard5"class="list-group-item">Cras justo odio</li>
+                <li id="item2homecard5"class="list-group-item">Dapibus ac facilisis in</li>
+                <li id="item3homecard5"class="list-group-item">Vestibulum at eros</li>
+                <li id="item4homecard5"class="list-group-item">Vestibulum at eros</li>
+                <li id="item5homecard5"class="list-group-item">Vestibulum at eros</li>
+            </ul>
+        </div>
+
+        <div id="homecard6" class="card">
+            <img id="homecardimg6" src="..." class="card-img-top" alt="..." />
+            <div class="card-body">
+            <h5 id="homecardtitle6" class="card-title">Card title</h5>
+            <p id="homecardtext6" class="card-text">
+                Some quick example text to build on the card title and make up the
+                bulk of the card's content.
+            </p>
+            </div>
+            <ul class="list-group list-group-flush">
+                <li id="item1homecard6"class="list-group-item">Cras justo odio</li>
+                <li id="item2homecard6"class="list-group-item">Dapibus ac facilisis in</li>
+                <li id="item3homecard6"class="list-group-item">Vestibulum at eros</li>
+                <li id="item4homecard6"class="list-group-item">Vestibulum at eros</li>
+                <li id="item5homecard6"class="list-group-item">Vestibulum at eros</li>
+            </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

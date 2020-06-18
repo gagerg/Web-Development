@@ -1,0 +1,209 @@
+/*Gage Gutmann
+CPSC 314
+Assignment 1
+9/22/19
+*/
+
+html {
+    font-family: sans-serif;
+    background-color: bisque;
+}
+
+/* By doing this, elements can go all the way to the side of the page.
+   You can get rid of this if you want */
+body {
+    margin: 0px;
+}
+
+h1{
+    margin: 0;
+    padding-top: 40px;
+    padding-left: 750px;
+    padding-right: 500px;
+    font-size: 35px;
+    color: #FFC42E;
+    text-shadow: 3px 2px black;
+   
+}
+
+h2{
+    margin-left: 14px;
+    color: #FFC42E;
+    text-shadow: 3px 2px black;
+}
+
+div.page-wrapper{
+    background: linear-gradient(#59A7FF,#A6F2FF);
+    border-color: black;
+    border-width: 5px;
+    border-style: outset;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+div.summary{
+    padding: 1em;
+    margin: 7px;
+    color: #FFC42E;
+    text-shadow: 3px 2px black;
+    box-shadow:
+    0 0  15px #FFC42E,
+    0 0  15px black;
+    background: linear-gradient(#605E61, #777);
+    margin-bottom: 21px;
+
+}
+
+
+
+div.preamble{
+    margin-top: 15px;
+    padding: 1em;
+    margin: 7px;
+    color: #FFC42E;
+    text-shadow: 3px 2px black;
+    box-shadow:
+    0 0  15px #FFC42E,
+    0 0  15px black;
+    background: linear-gradient(#605E61, #777);
+
+}
+
+div.explanation{
+
+    width: 42% ;
+    height: 400px;
+    float: left;
+    margin-left: 50px;
+    margin-right: 7px;
+    margin-top: 7px;
+    background-color: #605E61;
+    padding: 2em;
+    box-shadow:
+    0 0  15px #38E632,
+    0 0  15px black;
+   /* border-color:#38E632;
+    border-width: 5px;
+    border-style: outset;*/
+    color: #38E632;
+    text-shadow: 3px 2px black;
+    background-color: #777;
+    background: linear-gradient(#605E61, #777);
+
+}
+
+div.participation{
+    width: 42%;
+    height:400px;
+    float: left;
+    margin-left: 75px;
+    margin-top: 7px;
+
+    background-color: #605E61;
+    padding: 2em;
+
+    box-shadow:
+    0 0  15px #F06F00,
+    0 0  15px black;
+    /*border-color:#F06F00;
+    border-width: 5px;
+    border-style: outset;*/
+    color: #F06F00;
+    text-shadow: 3px 2px black;
+    background-color: #777;
+    background: linear-gradient(#605E61, #777);
+
+}
+
+div.benefits{
+    margin-top: 30px;
+    margin-left: 50px;
+    width: 42%;
+    height:200px;
+    float: left;
+    padding: 2em;
+    box-shadow:
+    0 0  15px #009DF0,
+    0 0  15px black;
+    /*border-color:#009DF0;
+    border-width: 5px;
+    border-style: outset;*/
+    color: #009DF0;
+    text-shadow: 3px 2px black;
+    background: linear-gradient(#605E61, #777);
+}
+
+div.requirements{
+    margin-top: 30px;
+    margin-left: 80px;
+    width: 42%;
+    height:700px;
+    float: left;
+    padding: 2em;
+    box-shadow:
+    0 0  15px #7A27E8,
+    0 0  15px black;
+    /*border-color:#CF00F0;
+    border-width: 5px;
+    border-style: outset;*/
+    color: #7A27E8;
+    text-shadow: 2px 2px black;
+    background: linear-gradient(#605E61, #777);
+}
+
+section.intro{
+    border-color: black;
+    border-width: 5px;
+    border-style: outset;
+}
+
+
+
+footer{
+    margin: 7px;
+
+}
+
+
+
+div.wrapper{
+    margin: 0px;
+    background: linear-gradient(#FFC42E, #F06F00);
+    border-color: black;
+    border-width: 5px;
+    border-style: outset;
+
+}
+
+div.design-selection{
+    margin: 0px;
+}
+
+li{
+    display: inline;
+    padding-right: 40px;
+    padding:20px;
+}
+
+
+
+/* Link that has not been visited */
+a:link {
+    color: black;
+    text-shadow: 0px 0px black
+}
+
+/* Link where the mouse is hovering over the it */
+a:hover {
+    color: #cc0;
+}
+
+/* Link that is being actively clicked on */
+a:active {
+    color: #0f0;
+}
+
+/* Link that has been visited */
+a:visited {
+    color: #00f;
+}

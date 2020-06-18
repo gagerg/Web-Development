@@ -1,0 +1,167 @@
+<!--Gage Gutmann
+11/18/19
+Assignment 4-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|Oxygen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Acme|Rokkitt&display=swap" rel="stylesheet">
+    <meta name="author" content="Gage R. Gutmann">
+    <meta name="description" content="Home Page">
+    <script src="thumbnail.js"></script>
+
+</head>
+<body onload="changeImage()">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>  
+
+    <nav class="navbar navbar-expand-lg navbar-light" style="background: linear-gradient(#C2EAF5,#F4F0D4);">
+        <a class="navbar-brand" href="home_page.html">GRG Shop</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="home_page.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="categories.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Categories
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="categories.html">Anime</a>
+                  <a class="dropdown-item" href="categories.html">Video Games</a>
+                  <a class="dropdown-item" href="categories.html">Fitness</a>
+                  <a class="dropdown-item" href="categories.html">Pillows</a>
+                </div>
+              </li>
+          </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+            <div class="row">
+                <div class="col">
+                  <h3>Categories</h3>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <a href="categories.html"><h4>Anime</h4></a>
+              </div>
+              <div class="col">
+                <a href="categories.html"><h4>Video Games</h4></a>
+              </div>
+              <div class="col">
+                <a href="categories.html"><h4>Fitness</h4></a>
+              </div>
+              <div class="col">
+                <a href="categories.html"><h4>Pillows</h4></a>
+              </div>
+            </div>
+     </div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+
+        <img id="OstrichMain"src="Images/Ostrich1.jpg" class="card-img" alt="...">
+    
+          <h5 class="card-title">Ostrich Pillow   $100.00</h5>
+          <p class="card-text">This is a really weird pillow that people use for traveling. It has hand holds for desk napping, and provides full 360 degree coverage!</p>
+          <h6 class="card-title">Average Rating: 3.0/5.0</h6>
+              <div class="gallery">
+                      <img id="Ostrich1" src="Images/Ostrich1.jpg" alt="..." width="600" height="400">
+              </div>
+
+              <div class="gallery">
+                      <img id="Ostrich2"src="Images/Ostrich2.jpg" alt="..." width="600" height="400">
+              </div>
+                  
+              <div class="gallery">
+                      <img id="Ostrich3" src="Images/Ostrich3.jpg" alt="..." width="600" height="400">
+              </div>
+    </div>
+    <div class="col">
+        <h5 class="card-title">Relevant Items</h5>
+
+<div class="card-deck">
+  
+  <div class="card">
+    <img src="Images/SablePillow.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title"><a href="product.html">Sable</a></h5>
+      <p class="card-text">$50.00</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted"><a href="categories.html">Category: Pillows</a></small>
+    </div>
+  </div>
+  <div class="card">
+    <img src="Images/Utopia.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title"><a href="product.html">Utopia</a></h5>
+      <p class="card-text">$25.00</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted"><a href="categories.html">Category: Pillows</a></small>
+    </div>
+  </div>
+  <div class="card">
+    <img src="Images/VODOF.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title"><a href="product.html">VODOF</a></h5>
+      <p class="card-text">$40.00</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted"><a href="categories.html">Category: Pillows</a></small>
+    </div>
+  </div>
+  
+</div>
+    </div>
+  </div>
+  
+</div>
+
+<div class="container-fluid">
+    <h3 class="card-title">Reviews</h3>
+    <ul class="list-unstyled">
+  <li class="media">
+    <img src="Images/User.jpg" class="mr-3" alt="...">
+    <div class="media-body">
+      <h5 class="mt-0 mb-1"><b>This Product is Amazing!</b>     Rating: 5.0/5.0</h5>
+      I love my Ostrich Pillow! It is great to travel with as well as take naps at my desk during my lunch breaks!
+    </div>
+  </li>
+  <li class="media my-4">
+    <img src="Images/User.jpg" class="mr-3" alt="...">
+    <div class="media-body">
+      <h5 class="mt-0 mb-1"><b>This is stupid.</b>   Rating: 1.0/5.0</h5>
+      I got this and tried using it in an airport. I wasn't able to sleep due to all the people laughing at me.
+    </div>
+  </li>
+  <li class="media">
+    <img src="Images/User.jpg" class="mr-3" alt="...">
+    <div class="media-body">
+      <h5 class="mt-0 mb-1"><b>Good Product</b>    Rating: 3.0/5.0</h5>
+       I like TURTLES!
+    </div>
+  </li>
+</ul>
+</div>
+
+
+</body>
+</html>
